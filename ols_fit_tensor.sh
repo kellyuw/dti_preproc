@@ -164,7 +164,7 @@ if [ "$fast_testing" = "y" ]; then
 fi
 
 if [ "$method" = "fsl" ] ; then
- T dtifit -k $data -o $tmpdir/dti -b $bval -r $bvec -m $mask --sse --save_tensor --wls 
+ T dtifit -k $data -o $tmpdir/dti -b $bval -r $bvec -m $mask --sse --save_tensor 
 fi
 
 if [ "$method" = "restore" ] ; then
